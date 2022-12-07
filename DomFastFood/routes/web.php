@@ -31,7 +31,7 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 
 
 
-
+Route::get('image/{filename}', 'HomeController@displayImage')->name('image.displayImage');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/food/list', [FoodController::class,"list"])->name('food.list');

@@ -38,6 +38,9 @@
                                 <th scope="col">Expiration Date</th>
                                 <th scope="col">Image</th>
                                 <th scope="col">Price</th>
+                                <th scope="col">First Number</th>
+                                <th scope="col">Secundary Number</th>
+                                <th scope="col">Sum Numbers</th>
                                 <th scope="col">Outhers Services</th>
                             </tr>
                             </thead>
@@ -49,8 +52,11 @@
                                     <td>{{$item->name}}</td>
                                     <td>{{$item->description}}</td>
                                     <td>{{$item->expiration_date}}</td>
-                                    <td>{{$item->image}}</td>
+                                    <td>{{$item->image}}<a></td>
                                     <td>{{$item->price}}</td>
+                                    <td>{{$item->number_one}}</td>
+                                    <td>{{$item->number_two}}</td>
+                                    <td>{{$item->number_one+$item->number_two}}</td>
                                     <td style="display: flex; justify-content: center;">
                                         <form action="{{route('food.destroy',$item)}}" method="post">
                                             @csrf

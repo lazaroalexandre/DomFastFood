@@ -16,7 +16,10 @@ class Food extends Model
         "description",
         "expiration_date",
         "image",
-        "price"
+        "price",
+        "number_one",
+        "number_two"
+        
     ];
     protected $dates = [
         "expiration_date"

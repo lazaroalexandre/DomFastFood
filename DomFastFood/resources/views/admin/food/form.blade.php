@@ -32,7 +32,7 @@
                         <div class="row mb-4">
                         <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <input type="file" class="form-control-file form-control-lg" name="image">
+                                <input type="file" class="form-control-file form-control-lg" name="image" required>
                             </div>
                         </div>
                         <div class="row mb-4">
@@ -41,6 +41,21 @@
                                 <input type="text" class="form-control form-control-lg" placeholder="Enter price food" name="price">
                             </div>
                         </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <input id="number_one" type="number" class="form-control form-control-lg" name="number_one" required placeholder="Enter a number">
+                                </div>
+                            </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <input id="number_two" type="number" class="form-control form-control-lg" name="number_two"  required placeholder="Enter an outher number">
+                                </div>
+                            </div>
+                   
+        
                     <div class="row mb-4">
                             <div class="col-md-12">
                                 <button type="submit" class="col-4 btn btn-lg btn-primary">

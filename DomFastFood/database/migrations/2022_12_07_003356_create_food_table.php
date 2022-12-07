@@ -21,6 +21,8 @@ class CreateFoodTable extends Migration
             $table->date("expiration_date");
             $table->string("image");
             $table->decimal("price");
+            $table->integer("number_one");
+            $table->integer("number_two");
             $table->softDeletes();
         });
     }
